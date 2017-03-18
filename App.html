@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<head>
+	<title>Work Cart</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+
+var app = angular.module('myWorkList', []);
+app.controller('myCtrl', function($scope) {
+
+	$scope.works = ["Breakfast at 8'o clock","File submission on wednesday","Gym at 7 p.m"];
+	$scope.addItem = function() {
+		$scope.errortext = "";
+		if(!$scope.addMe) {return;}
+		if ($scope.works.indexOf($scope.addMe) == -1) {
+            $scope.works.push($scope.addMe);
+        } else {
+            $scope.errortext = "It is already in your work list.";
+        }
+	}
+	$scope.removeItem = function(x) {
+		$scope.works.splice(x, 1);
+	}
+});	
+</script>
+
+<body>
+<div class="main" style="max-width: 400px;" ng-app="myWorkList" ng-controller="myCtrl">
+
+<ul class="main-ul">
+	<header class="header-container">
+	<h3>My Work List</h3>
+	</header>
+	<li class="main-li" ng-repeat="x in works">
+	{{ x }}<span class="main-right main-margin-right" ng-click="removeItem($index)">&times;</span>
+	</li>
+</ul>
+
+<div class="main-container main-light-grey main-padding-16">
+	<div class="main-row main-margin-top">
+	<div class="main-col s10">
+		<input class="main-input main-border main-padding" type="text" ng-model="addMe" placeholder="Type work here">
+	</div>
+	<div class="main-col s2">
+		<button class="main-btn main-padding" ng-click="addItem()">Add</button>	
+	</div>	
+	</div>
+
+<p class="main-padding-left main-text-red">{{ errortext }}</p>	
+</div>
+
+</div>
+
+
+
+</body>
+</html>
