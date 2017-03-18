@@ -4,12 +4,10 @@
 
 <li>Download this project.</li>
 <li>Keep both the files in same directory.</li>
-<li>Open App.html in web browser.</li>
+<li>Open App.html in web browser (Google Chrome).</li>
 
 </ul>
 
 
-
-
-Note – Internet connection in required.
+Note – Internet connection is required to run this project.
 
