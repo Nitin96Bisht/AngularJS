@@ -15,10 +15,12 @@ Once work gets completed then we can remove that work from work lists.
 
 <h1>Exception Handling</h1>
 
+
 <ol>
 <li>
-We can not add empty work in work lists. It enables us to keep track of actual work.
-</li>
+No empty work can be added to work list.</li>
+
+<li>No duplicate work can be added to work list.</li>
 </ol>
 
 
