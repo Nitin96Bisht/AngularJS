@@ -1,6 +1,11 @@
 <h1>Installation</h1>
 
-Download project.
+<ul>
+
+<li>Download this project.</li>
+
+</ul>
+
 
 Keep both the files in same directory.
 
