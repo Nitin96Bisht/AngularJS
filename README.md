@@ -13,16 +13,23 @@
 
 <h5>Note – Internet connection is required to run this project.</h5>
 
-This SAP(single page application) developed using AngularJS, HTML, CSS. This application allows us to know lists of works to be done today. <br>
-Once work gets completed then we can remove that work from work lists.
+<h1>Features</h1>
+
+<ol>
+
+<li>This SAP(Single Page Application) allows us to manage lists of works to be accomplished.</li>
+<li>We can add countless works to work-list.</li>
+<li>We can remove works from work-list.</li>
+<li>Once work is done then we can remove that work from work list.</li>
+</ol>
+
+
+<h5>Note - No database connection provided till now. Work-list is active till web page is open.</h5>
 
 <h1>Exception Handling</h1>
 
-
 <ol>
-<li>
-No empty work can be added to work list.</li>
-
+<li>No empty work can be added to work list.</li>
 <li>No duplicate work can be added to work list.</li>
 </ol>
 
